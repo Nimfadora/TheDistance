@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Distance 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="controlPanel">
+    <div id="logoContainer"><img src="images/TheDistanceLogo.png"></div>
+    <div id="inputs">
+        <div class="inputContainer">
+            <label for="origin"><img src="https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-a.png&text=A&psize=16&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=44&ay=48&scale=1"></label>
+            <div class="inner-addon right-addon">
+                <span class="glyphicon glyphicon-map-marker origin"></span>
+                <input type="text" id="origin" class="form-control input-lg controls" placeholder="Откуда">
+            </div>
+        </div>
+        <div class="inputContainer">
+            <label for="dest"><img src="https://mts.googleapis.com/vt/icon/name=icons/spotlight/spotlight-waypoint-b.png&text=B&psize=16&font=fonts/Roboto-Regular.ttf&color=ff333333&ax=44&ay=48&scale=1"></label>
+            <div class="inner-addon right-addon">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                <input type="text" id="dest" class="form-control input-lg" placeholder="Куда">
+            </div>
+        </div>
+    </div>
+    <div id="results">
+        <div id="distance"><span class="glyphicon glyphicon-road"></span> <span class="distanceData" id="total"></span></div>
+        <div id="fd"><span class="glyphicon glyphicon-plane"></span> <span class="distanceData" id="flightDistance"></span></div>
+    </div>
+</div>
+<div id="map"></div>
+<script src="js/main.js" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoFCd8fgAUqIlM2OakX_WNTwN682JC280&signed_in=true&libraries=places&callback=initMap">
+</script>
+</body>
+</html>

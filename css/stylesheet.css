@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    float: left;
+    z-index: 5;
+    height: calc(100% - 142px);
+    width: 100%;
+}
+
+#controlPanel{
+    height: 142px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+#logoContainer{
+    height: 142px;
+    float: left;
+    width: 30%;
+    border-right: inset 1px white;
+}
+#logoContainer img{
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3% 10%;
+}
+#inputs{
+    float: left;
+    height: 142px;
+    width: 40%;
+    border-right: inset 1px white;
+}
+.inputContainer{
+    /*margin-top: 10px;*/
+    height: 56px;
+    padding: 2.5% 8% 2.5% 8%;
+    width: 100%;
+}
+label{
+    float: left;
+    height: 46px;
+    margin: 2px 5px 2px 2px;
+!important;
+}
+
+label img{
+    height: 46px;
+}
+
+input.form-control{
+    float: left;
+    width: 600px;
+    !important;
+}
+
+/*some stuff with glyphicons*/
+
+.inner-addon {
+    width: 633px;
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 12px;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon {
+    z-index: 12;
+    right: 0px;
+    font-size: 22px;
+}
+.right-addon span{
+    color: rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+!important;
+}
+.right-addon span:hover{
+    color: rgba(40, 153, 227, 0.7);
+}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 46px; }
+
+
+
+#results{
+    width: 30%;
+    float: left;
+}
+
+#distance, #fd{
+    color: white;
+    padding: 30px;
+    height: 142px;
+    width: 50%;
+    float: left;
+}
+
+.distanceData{
+    font-size: 20px;
+    padding:  20px;
+}
+
+#distance .glyphicon, #fd .glyphicon{
+    font-size: 82px;
+}
+
+/*//////////////////////////////////////////*/
+
+#right-panel select, #right-panel input {
+    font-size: 15px;
+}
+
+#right-panel select {
+    width: 100%;
+}
+
+#right-panel i {
+    font-size: 12px;
+}
+#right-panel {
+    float: right;
+    width: 34%;
+    height: 95%;
+    padding-left: 1%;
+    overflow: auto;
+}
+#output {
+    font-size: 11px;
+}

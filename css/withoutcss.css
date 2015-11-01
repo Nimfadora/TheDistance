@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    float: left;
+    z-index: 5;
+    height: calc(100% - 142px);
+    width: 100%;
+}
+
+#controlPanel{
+    height: 142px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+#logoContainer{
+    height: 142px;
+    float: left;
+    width: 30%;
+    border-right: inset 1px white;
+}
+#logoContainer img{
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3% 10%;
+}
+label{
+    float: left;
+    height: 46px;
+    margin: 2px 5px 2px 2px;
+!important;
+}
+
+label img{
+    height: 46px;
+}
+
+
+#location .glyphicon:hover{
+    color: rgba(40, 153, 227, 0.7);
+}
+
+#results{
+    width: 70%;
+    float: left;
+}
+
+#distance, #fd, #location{
+    color: white;
+    padding: 30px;
+    height: 142px;
+    width: 33%;
+    float: left;
+}
+
+.distanceData{
+    font-size: 20px;
+    padding:  20px;
+}
+
+#distance .glyphicon, #fd .glyphicon, #location .glyphicon{
+    font-size: 82px;
+}

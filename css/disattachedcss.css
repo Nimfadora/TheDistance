@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    float: left;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+#controlPanel{
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 180px;
+    width: 400px;
+    z-index: 12;
+    background-color: rgba(0, 0, 0, 0.58);
+    border: groove 1px black;
+}
+
+#logoContainer{
+    z-index: 12;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+}
+#logoContainer img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3% 10% 3% 10%;
+}
+#inputs{
+    float: left;
+    min-height: 112px;
+    height: 70%;
+    width: 100%;
+}
+.inputContainer{
+    /*margin-top: 10px;*/
+    height: 56px;
+    padding: 2.5%;
+    width: 100%;
+}
+label{
+    float: left;
+    height: 46px;
+    margin: 2px 5px 2px 2px;
+!important;
+}
+
+label img{
+    height: 46px;
+}
+
+input.form-control{
+    float: left;
+    width: 90%;
+!important;
+}
+
+/*some stuff with glyphicons*/
+
+.inner-addon {
+    width: 100%;
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 12px;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon {
+    z-index: 12;
+    right: 0px;
+    font-size: 22px;
+}
+.right-addon span{
+    color: rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+!important;
+}
+.right-addon span:hover{
+    color: rgba(40, 153, 227, 0.7);
+}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 46px; }
+
+
+
+#results{
+    width: 100%;
+    height: 30%;
+    float: left;
+}
+
+#distance, #fd{
+    color: white;
+    padding: 2.5%;
+    height: 142px;
+    width: 50%;
+    float: left;
+}
+
+.distanceData{
+    font-size: 16px;
+    padding:  20px;
+}
+
+#distance .glyphicon, #fd .glyphicon{
+    font-size: 30px;
+}

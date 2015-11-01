@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Without search 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/withoutcss.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="controlPanel">
+    <div id="logoContainer"><img src="images/TheDistanceLogo.png"></div>
+    <div id="results">
+        <div id="location"><span class="glyphicon glyphicon-map-marker origin"></span></div>
+        <div id="distance"><span class="glyphicon glyphicon-road"></span> <span class="distanceData" id="total"></span></div>
+        <div id="fd"><span class="glyphicon glyphicon-plane"></span> <span class="distanceData" id="flightDistance"></span></div>
+    </div>
+</div>
+<div id="map"></div>
+<script src="js/withoutSearch.js" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoFCd8fgAUqIlM2OakX_WNTwN682JC280&signed_in=true&libraries=places&callback=initMap">
+</script>
+</body>
+</html>
